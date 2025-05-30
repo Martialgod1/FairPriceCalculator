@@ -14,7 +14,7 @@ app = FastAPI()
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], 
+    allow_origins=["*"],  # In production, replace with your Vercel domain
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
